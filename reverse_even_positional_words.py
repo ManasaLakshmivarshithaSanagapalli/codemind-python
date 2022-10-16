@@ -1,10 +1,11 @@
-n = input()
-n = n.split(" ")
+n=input().split()
+l=[]
 for i in range(len(n)):
-    if i%2==0:
-        for j in range(len(n[i])-1,-1,-1):
-            print(n[i][j],end="")
+    if(i%2!=0):
+        l.append(n[i])
     else:
-        for j in range(len(n[i])):
-            print(n[i][j],end="")
-    print(end=" ")
+        k=n[i];
+        k=k[::-1]
+        l.append(k)
+for i in l:
+    print(i,end=" ")
