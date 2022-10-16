@@ -1,5 +1,7 @@
-a=input()
-arr=list(a.split())
-l=len(arr)
-for i in range(l-1,-1,-1):
-    print(arr[i],end=" ")
+n=input().split()
+l=[]
+for i in range(len(n)-1,-1,-1):
+    k=n[i]
+    l.append(k)
+for i in l:
+    print(i,end=" ")
